@@ -25,25 +25,25 @@ In the **Basic** tab of the wizard, fill out the following information:
 - Now it's time to set up the Administrator account. For now, I'm going to use a password to authenticate to my Linux VM, but in the future I need to dabble with SSH keys.
 - Finally, choose inbound port rules. Typically you don't want virtual machines to have direct Internet access, but this VM won't be online all the time and it won't have anything sensitive on it. I'll choose to all SSH on port 22 so I can remote directly to it.
 
-Overview of basic configuration:
+Overview of basic configuration:<br/>
 ![Basic VM settings](./img/basictab.png)
 
-<br/>Continue onto the **Disks** tab. Here we'll keep it simple. I'll change the OS Disk Type to **Standard SSD** just to save a bit on storage costs versus the premium SSD option. If you expand the Advanced settings, keep the option to use managed disks. This way you don't need to manage the disks in storage accounts manually and keep track of available storage and IOPS.
+Continue onto the **Disks** tab. Here we'll keep it simple. I'll change the OS Disk Type to **Standard SSD** just to save a bit on storage costs versus the premium SSD option. If you expand the Advanced settings, keep the option to use managed disks. This way you don't need to manage the disks in storage accounts manually and keep track of available storage and IOPS.
 
-Overview of disks configuration:
+Overview of disks configuration:<br/>
 ![VM disk settings](./img/diskstab.png)
 
-<br/>Continue onto the **Networking** tab. Since I don't have any existing virtual networks, I'm going to keep this all at the defaults, including a public IP address so I can access my virtual machine directly over the Internet. Typically not a best practice, but again, this VM is for learning purposes, so I'm not getting fancy yet.
+Continue onto the **Networking** tab. Since I don't have any existing virtual networks, I'm going to keep this all at the defaults, including a public IP address so I can access my virtual machine directly over the Internet. Typically not a best practice, but again, this VM is for learning purposes, so I'm not getting fancy yet.
 
-Overview of network configuration:
+Overview of network configuration:<br/>
 ![Network settings](./img/networktab.png)
 
-<br/>Continue onto the **Management** tab. I will make one small change here and that is to disable boot diagnostics. This setting will capture serial console output and take screenshots of the virtual machine to help diagnose startup issues. However, this requires a storage account for storing these log files and images, so I want to skip this for now.
+Continue onto the **Management** tab. I will make one small change here and that is to disable boot diagnostics. This setting will capture serial console output and take screenshots of the virtual machine to help diagnose startup issues. However, this requires a storage account for storing these log files and images, so I want to skip this for now.
 
-Overview of management configuration:
+Overview of management configuration:<br/>
 ![Management settings](./img/managementtab.png)
 
-<br/>Finally, for the **Advanced** tab, there is nothing to configure here for now. Might get into extensions or custom data liking passing a configuration script, but for now I'm good (and no screenshot being included here). The same goes for the **Tags** tab. For real production workloads, you would want to tag the virtual machine as *prod* or *dev* or maybe associate it with a department for billing purposes.
+Finally, for the **Advanced** tab, there is nothing to configure here for now. Might get into extensions or custom data liking passing a configuration script, but for now I'm good (and no screenshot being included here). The same goes for the **Tags** tab. For real production workloads, you would want to tag the virtual machine as *prod* or *dev* or maybe associate it with a department for billing purposes.
 
 Skip over to the **Review + create** tab and verify it passes validation. If it does, select **Create** at the bottom. Once the deployment is complete, go back to the newly created resource group and see the different resources created:
 
@@ -54,21 +54,21 @@ Skip over to the **Review + create** tab and verify it passes validation. If it 
 - A separate network interface that attaches to the virtual network
 - Operating system disk
 
-![Result of VM creation](./img/resources.png)
+![Result of VM creation](./img/resources.png)<br/>
 
-<br/>Selecting the virtual machine, in the top overview section there will be the current public IP address so I can connect to the virtual machine directly. Here it is **13.83.82.96**:
+Selecting the virtual machine, in the top overview section there will be the current public IP address so I can connect to the virtual machine directly. Here it is **13.83.82.96**:
 
-![Virtual machine configuration](./img/vmconfig.png)
+![Virtual machine configuration](./img/vmconfig.png)<br/>
 
-<br/>I could select the Connect button and it will give me instructions on connecting to the virtual machine with a private key. Right now I don't have one generated, so instead I'm going to jump out to PowerShell and use the built-in SSH client to connect to the virtual machine. The syntaxt is:
+I could select the Connect button and it will give me instructions on connecting to the virtual machine with a private key. Right now I don't have one generated, so instead I'm going to jump out to PowerShell and use the built-in SSH client to connect to the virtual machine. The syntaxt is:
 
 ```powershell
 ssh <user name>@<ip address>
 ```
 
-![SSH to Linux VM](./img/linuxsshlogin.png)
+![SSH to Linux VM](./img/linuxsshlogin.png)<br/>
 
-<br/>The first time you log onto a Linux VM, there will be a warning about adding the server fingerprint to a list of known hosts. I'm OK with this, so I enter "yes" and then the password I created back on the **Basics** tab when creating the virtual machine.
+The first time you log onto a Linux VM, there will be a warning about adding the server fingerprint to a list of known hosts. I'm OK with this, so I enter "yes" and then the password I created back on the **Basics** tab when creating the virtual machine.
 
 ## Next Steps
 
