@@ -1,7 +1,5 @@
 ![banner image](./img/banner.png)
 
-# Deploy a Virtual Machine in Azure
-
 ## Introduction
 
 I'm currently studying for the LPI Linux Essentials exam. I've always been a Microsoft guy, but working in the cloud means knowing multiple operating systems. I'm going to deploy a Linux VM in Azure to work with and get to know the Linux operating system.
@@ -30,15 +28,18 @@ In the **Basic** tab of the wizard, fill out the following information:
 Overview of basic configuration:
 ![Basic VM settings](./img/basictab.png)
 
+
 Continue onto the **Disks** tab. Here we'll keep it simple. I'll change the OS Disk Type to **Standard SSD** just to save a bit on storage costs versus the premium SSD option. If you expand the Advanced settings, keep the option to use managed disks. This way you don't need to manage the disks in storage accounts manually and keep track of available storage and IOPS.
 
 Overview of disks configuration:
 ![VM disk settings](./img/diskstab.png)
 
+
 Continue onto the **Networking** tab. Since I don't have any existing virtual networks, I'm going to keep this all at the defaults, including a public IP address so I can access my virtual machine directly over the Internet. Typically not a best practice, but again, this VM is for learning purposes, so I'm not getting fancy yet.
 
 Overview of network configuration:
 ![Network settings](./img/networktab.png)
+
 
 Continue onto the **Management** tab. I will make one small change here and that is to disable boot diagnostics. This setting will capture serial console output and take screenshots of the virtual machine to help diagnose startup issues. However, this requires a storage account for storing these log files and images, so I want to skip this for now.
 
@@ -80,6 +81,5 @@ So instead of buiding a virtual machine manually like this, wouldn't it be nice 
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+[Twitter](https://twitter.com/JeffWBrown/status/1298105256341934082?s=20)
+[LinkedIn](https://www.linkedin.com/posts/jeffwaynebrown_jeffbrowntech100daysofcloud-activity-6703871248100925440-xtcn)
