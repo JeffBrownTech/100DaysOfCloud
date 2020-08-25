@@ -10,24 +10,34 @@
 5. Update your main README to link back to your Day Journey article
 4. If you need ideas go to [#100DaysOfCloudIdeas](https://github.com/100DaysOfCloud/100DaysOfCloudIdeas)
 
-## How to use this template:
-Fill in your details where you see this icon ✍️
-We have provided a sample Day Journey entry staring at 0. You can delete this example.
+## Jeff Brown's Cloud Journey
 
-## [✍️ Your Name]'s Cloud Journey
+My name is Jeff Brown, and I am a 13+ year veteran of the IT industry working as a systems administrator/engineer and cloud engineer. I've primarily worked in the Microsoft space with technologies like Active Directory, Exchange, SQL, & SCCM. Lately I've been helping companies move to Microsoft 365, primarily using Microsoft Teams for collaboration purposes. I love automation and am a big fan of PowerShell and programming in general.
 
-[✍️ Introduce yourself]
+I've started this challenge as a way to organize what I am doing to expand my skillset outside of the Microsoft ecosystem. I'm working towards a career as an Azure Cloud or DevOps engineer. I've already achieved several Azure certifications including:
 
-[✍️ Tell us why you started this challenge]
+- Azure Administrator Associate
+- Azure Security Engineer Associate
+- Azure Architect Expert
+- DevOps Engineer Expert
 
-[✍️ Tell us where you want to be at the end of the challenge]
+[View my Acclaim badges for Microsoft Certifications Here](https://www.youracclaim.com/users/jeffbrowntech/badges?sort=-state_updated_at&page=1)
 
-- [✍️ Link to your Twitter](https://twitter.com/username)
-- [✍️ Link to your LinkedIn](https://www.linkedin.com/in/username)
+At the end of this challenge, I'd like to:
+
+- Become comfortable with using and understanding the Linux operating system
+- Knowledgeable on Ansible and Terraform
+- Build pipelines using Azure DevOps, GitHub actions, and Jenkins
+- Basics of containers
+- A bit of Python too
+
+- [Follow me on Twitter @JeffWBrown](https://twitter.com/JeffWBrown)
+- [Connect with me on LinkedIn](https://www.linkedin.com/in/jeffwaynebrown)
+- [Check out my blog at https://JeffBrown.tech](https://jeffbrown.tech)
 
 ## Stepping out the door
 
-- [ ] ☁️ 1 > [My First Day](Journey/001/Readme.md)
+- ☁️ 1 > [Deploy a Virtual Machine in Azure](Journey/001/Readme.md)
 - [ ] ☁️ 2 > [](Journey/002/Readme.md)
 - [ ] ☁️ 3 > [](Journey/003/Readme.md)
 - [ ] ☁️ 4 > [](Journey/004/Readme.md)
