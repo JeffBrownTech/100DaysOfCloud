@@ -4,10 +4,6 @@
     "parameters": {
         "virtualMachineName": {
             "type": "String"
-        },
-
-        "vmAdminPassword": {
-            "type": "securestring"
         }
     },
     "variables": {
@@ -40,7 +36,6 @@
                 "osProfile": {
                     "computerName": "[parameters('virtualMachineName')]",
                     "adminUsername": "jeff_cloud",
-                    "adminPassword": "[parameters('vmAdminPassword')]",
                     "linuxConfiguration": {
                         "disablePasswordAuthentication": false,
                         "provisionVMAgent": true
