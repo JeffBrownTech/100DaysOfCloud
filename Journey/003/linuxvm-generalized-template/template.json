@@ -2,7 +2,7 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "virtualMachines_name": {
+        "virtualMachineName": {
             "type": "String"
         },
 
@@ -14,13 +14,13 @@
         "vnetName": "100daysofcloud-rg-vnet",
         "subnetName": "default",
         "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('vnetName'), variables('subnetName'))]",
-        "linuxNic": "[concat(parameters('virtualMachines_name'), '-nic')]"
+        "linuxNic": "[concat(parameters('virtualMachineName'), '-nic')]"
     },
     "resources": [
         {
             "type": "Microsoft.Compute/virtualMachines",
             "apiVersion": "2019-07-01",
-            "name": "[parameters('virtualMachines_name')]",
+            "name": "[parameters('virtualMachineName')]",
             "location": "[resourceGroup().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/networkInterfaces', variables('linuxNic'))]"
@@ -38,7 +38,7 @@
                     }
                 },
                 "osProfile": {
-                    "computerName": "[parameters('virtualMachines_name')]",
+                    "computerName": "[parameters('virtualMachineName')]",
                     "adminUsername": "jeff_cloud",
                     "adminPassword": "[parameters('vmAdminPassword')]",
                     "linuxConfiguration": {
