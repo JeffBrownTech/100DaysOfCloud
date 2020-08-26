@@ -38,7 +38,7 @@ I removed the managed disk, had to create the NIC prior to creating the VM, had 
 
 ![Final template deployment](./img/generalizedtemplate.png)
 
-It was good to get back into looking at ARM templates, haven't done it in awhile. Had to refer back to some other ones I had built in the past.
+It was good to get back into looking at ARM templates, haven't done it in awhile. Had to refer back to some other ones I had built in the past. This one is missing a few things like a public IP address and a network security group to allow SSH. Will need to continue to improve the template to include these.
 
 ## Next Steps
 
@@ -46,4 +46,5 @@ While I reduced the amount of time to deploy in the portal, it'll probably be fa
 
 ## Social Proof
 
-[link](link)
+[Twitter](https://twitter.com/JeffWBrown/status/1298470898236665856?s=20)
+[LinkedIn](https://www.linkedin.com/posts/jeffwaynebrown_jeffbrowntech100daysofcloud-activity-6704236696227090432-9gUz)
