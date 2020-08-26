@@ -1,0 +1,68 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachines_linuxvm01_name": {
+            "defaultValue": "linuxvm01",
+            "type": "String"
+        },
+        "disks_linuxvm01_OsDisk_1_2530984cf3b9413da46be6c3fc019c7d_externalid": {
+            "defaultValue": "/subscriptions/5b525e6f-a2ca-4bd5-a142-e38047b2c79e/resourceGroups/100DAYSOFCLOUD-RG/providers/Microsoft.Compute/disks/linuxvm01_OsDisk_1_2530984cf3b9413da46be6c3fc019c7d",
+            "type": "String"
+        },
+        "networkInterfaces_linuxvm01135_externalid": {
+            "defaultValue": "/subscriptions/5b525e6f-a2ca-4bd5-a142-e38047b2c79e/resourceGroups/100daysofcloud-rg/providers/Microsoft.Network/networkInterfaces/linuxvm01135",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Compute/virtualMachines",
+            "apiVersion": "2019-07-01",
+            "name": "[parameters('virtualMachines_linuxvm01_name')]",
+            "location": "westus",
+            "properties": {
+                "hardwareProfile": {
+                    "vmSize": "Standard_B1s"
+                },
+                "storageProfile": {
+                    "imageReference": {
+                        "publisher": "OpenLogic",
+                        "offer": "CentOS",
+                        "sku": "8_2",
+                        "version": "latest"
+                    },
+                    "osDisk": {
+                        "osType": "Linux",
+                        "name": "[concat(parameters('virtualMachines_linuxvm01_name'), '_OsDisk_1_2530984cf3b9413da46be6c3fc019c7d')]",
+                        "createOption": "FromImage",
+                        "caching": "ReadWrite",
+                        "managedDisk": {
+                            "id": "[parameters('disks_linuxvm01_OsDisk_1_2530984cf3b9413da46be6c3fc019c7d_externalid')]"
+                        }
+                    },
+                    "dataDisks": []
+                },
+                "osProfile": {
+                    "computerName": "[parameters('virtualMachines_linuxvm01_name')]",
+                    "adminUsername": "jeff_cloud",
+                    "linuxConfiguration": {
+                        "disablePasswordAuthentication": false,
+                        "provisionVMAgent": true
+                    },
+                    "secrets": [],
+                    "allowExtensionOperations": true,
+                    "requireGuestProvisionSignal": true
+                },
+                "networkProfile": {
+                    "networkInterfaces": [
+                        {
+                            "id": "[parameters('networkInterfaces_linuxvm01135_externalid')]"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
