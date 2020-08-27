@@ -118,7 +118,5 @@ I need to work on this template some more to add a public IP address and a netwo
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[Twitter](link)
-[LinkedIn](link)
+[Twitter](https://twitter.com/JeffWBrown/status/1298804006148378624?s=20)
+[LinkedIn](https://www.linkedin.com/posts/jeffwaynebrown_jeffbrowntech100daysofcloud-activity-6704569874859081728-0Z64)
