@@ -3,11 +3,11 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "virtualMachines_name": {
-            "value": null
+            "value": "linuxvm03"
         },
 
         "vmAdminPassword": {
-            "value": null
+            "value": "P@ssw0rd123!"
         }
     }
 }
