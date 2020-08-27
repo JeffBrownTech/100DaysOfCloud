@@ -1,4 +1,3 @@
-**Add a cover photo like:**
 ![Banner](./img/banner.png)
 
 ## Introduction
