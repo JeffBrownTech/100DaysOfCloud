@@ -138,5 +138,5 @@ Next I want to add the virtual network and subnet as parameters so they are not 
 
 ## Social Proof
 
-[Twitter](link)
-[LinkedIn](link)
+[Twitter](https://twitter.com/JeffWBrown/status/1299186603047268352?s=20)
+[LinkedIn](https://www.linkedin.com/posts/jeffwaynebrown_jeffbrowntech100daysofcloud-activity-6704952528074887168-7ggB)
