@@ -35,12 +35,12 @@ At the end of this challenge, I'd like to:
 - [Connect with me on LinkedIn](https://www.linkedin.com/in/jeffwaynebrown)
 - [Check out my blog at https://JeffBrown.tech](https://jeffbrown.tech)
 
-## Stepping out the door
+## Automating Resource Deployments to Azure
 
 - [ ] ☁️ 1 > [Deploy a Virtual Machine in Azure](Journey/001/Readme.md)
 - [ ] ☁️ 2 > [Using ARM Templates to Deploy VMs](Journey/002/Readme.md)
 - [ ] ☁️ 3 > [Deploy Resources with ARM Templates and PowerShell](Journey/003/Readme.md)
-- [ ] ☁️ 4 > [](Journey/004/Readme.md)
+- [ ] ☁️ 4 > [Configuring ARM Templates with Additional Resources](Journey/004/Readme.md)
 - [ ] ☁️ 5 > [](Journey/005/Readme.md)
 - [ ] ☁️ 6 > [](Journey/006/Readme.md)
 - [ ] ☁️ 7 > [](Journey/007/Readme.md)
