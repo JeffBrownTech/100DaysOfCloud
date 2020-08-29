@@ -2,6 +2,14 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
+        "virtualMachineName": {
+            "value": "linuxvm01"
+        },
+
+        "Administrator": {
+            "value": "jeff_cloud"
+        },
+
         "Password": {
             "reference": {
                 "keyVault": {
