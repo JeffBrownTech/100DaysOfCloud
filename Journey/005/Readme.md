@@ -43,5 +43,5 @@ The last thing I want to do is save an admin password into a key vault and have 
 
 ## Social Proof
 
-[Twitter](link)
-[LinkedIn](link)
+[Twitter](https://twitter.com/JeffWBrown/status/1299538798280208385?s=20)
+[LinkedIn](https://www.linkedin.com/posts/jeffwaynebrown_jeffbrowntech100daysofcloud-activity-6705304553493004288-a8MH)
