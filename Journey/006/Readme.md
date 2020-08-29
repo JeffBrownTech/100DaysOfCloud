@@ -31,6 +31,7 @@ I save the template and parameter URI from GitHub to their respective variables 
 
 ```powershell
 New-AzResourceGroupDeployment -ResourceGroupName "100daysofcloud-rg" -TemplateUri $templateuri -TemplateParameterUri $parameteruri
+```
 
 ## Next Steps
 
@@ -38,5 +39,5 @@ I think I am pretty much done with this for now. Next I need to move onto some o
 
 ## Social Proof
 
-[Twitter](link)
-[LinkedIn](link)
+[Twitter](https://twitter.com/JeffWBrown/status/1299854655044775936?s=20)
+[LinkedIn](https://www.linkedin.com/posts/jeffwaynebrown_100daysofcode-activity-6705620418549706752-f8CP)
