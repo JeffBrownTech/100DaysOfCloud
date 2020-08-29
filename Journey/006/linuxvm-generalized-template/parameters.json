@@ -1,0 +1,22 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachineName": {
+            "value": null
+        },
+
+        "Administrator": {
+            "value": null
+        },
+
+        "Password": {
+            "reference": {
+                "keyVault": {
+                "id": "/subscriptions/5b525e6f-a2ca-4bd5-a142-e38047b2c79e/resourceGroups/api-keys-rg/providers/Microsoft.KeyVault/vaults/lab-resources"
+                },
+                "secretName": "LinuxAdmin"
+            }
+        }
+    }
+}
