@@ -43,7 +43,7 @@ At the end of this challenge, I'd like to:
 - [ ] ☁️ 4 > [Configuring ARM Templates with Additional Resources (Part 1)](Journey/004/Readme.md)
 - [ ] ☁️ 5 > [Configuring ARM Templates with Additional Resources (Part 2)](Journey/005/Readme.md)
 - [ ] ☁️ 6 > [Use Azure Key Vault in ARM Templates](Journey/006/Readme.md)
-- [ ] ☁️ 7 > [](Journey/007/Readme.md)
+- [ ] ☁️ 7 > [Deploy from GitHub with a Deploy to Azure Button](Journey/007/Readme.md)
 - [ ] ☁️ 8 > [](Journey/008/Readme.md)
 - [ ] ☁️ 9 > [](Journey/009/Readme.md)
 - [ ] ☁️ 10 > [](Journey/010/Readme.md)

@@ -1,52 +1,33 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+![banner](./img/banner.png)
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+I briefly looked at deploying a template from the Azure portal and from PowerShell. One last option I wanted to add is using a Deploy to Azure button directly from GitHub.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
-
-## Use Case
-
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+A template and GitHub account.
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+I followed the instructions found [here in Microsoft Docs for deploying an Azure button](https://docs.microsoft.com/azure/azure-resource-manager/templates/deploy-to-azure-button).
+It's pretty straight forward using some PowerShell to encode the URL.
 
-### Step 1 — Summary of Step
+I put the Linux lab template I've been building into its own repo named [linux-lab](https://github.com/JeffBrownTech/linux-lab). Notice the "Deploy to Azure" button. Clicking this takes you straight into the Azure portal and prompts for the basic information, resource group, vm name, admin name, and password.
 
-![Screenshot](https://via.placeholder.com/500x300)
+This can be a bit quicker deployment than loading up PowerShell or manually creating the template deployment resource in Azure.
 
-### Step 1 — Summary of Step
+If I wanted, I guess I could default some of the values but for now I'll keep it generic.
 
-![Screenshot](https://via.placeholder.com/500x300)
+![Deploy to Azure from GitHub](./img/deploytoazurebtn.png)
 
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
+![Azure Template Deployment](./img/azuretemplatedeploy.png)
 
 ## Next Steps
 
-✍️ Describe what you think you think you want to do next.
+Need to move onto some Infrastructure as Code concepts with Ansible.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+[Twitter](link)
+[LinkedIn](link)
