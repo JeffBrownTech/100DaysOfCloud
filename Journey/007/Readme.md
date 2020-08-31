@@ -29,5 +29,5 @@ Need to move onto some Infrastructure as Code concepts with Ansible.
 
 ## Social Proof
 
-[Twitter](link)
-[LinkedIn](link)
+[Twitter](https://twitter.com/JeffWBrown/status/1300566641445466112?s=20)
+[LinkedIn](https://www.linkedin.com/posts/jeffwaynebrown_100daysofcloud-activity-6706332398386221057-xpGX)
