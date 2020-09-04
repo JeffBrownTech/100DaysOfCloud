@@ -126,5 +126,5 @@ Alright, hopefully that's it for ARM templates, coming soon should be some Ansib
 
 ## Social Proof
 
-[Twitter](link)
-[LinkedIn](link})
+[Twitter](https://twitter.com/JeffWBrown/status/1302023797399224324?s=20)
+[LinkedIn](https://www.linkedin.com/posts/jeffwaynebrown_jeffbrowntech100daysofcloud-activity-6707789806799347712-O4EK})
