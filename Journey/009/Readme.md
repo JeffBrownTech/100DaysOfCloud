@@ -80,5 +80,5 @@ I'll continue working through the YouTube series and book. Once I get a good fee
 
 ## Social Proof
 
-[Twitter](link)
-[LinkedIn](link)
+[Twitter](https://twitter.com/JeffWBrown/status/1302814909340606464?s=20)
+[LinkedIn](https://www.linkedin.com/posts/jeffwaynebrown_jeffbrowntech100daysofcloud-activity-6708580664490500096-ZGL0)
