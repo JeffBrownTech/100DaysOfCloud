@@ -1,52 +1,86 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+![banner](./img/banner.png)
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+I work through Chapter 3 of Ansible for DevOps and make some improvements on my ansible lab deployment.
 
-## Prerequisite
+## Overview
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+Before deploying my [Ansible lab](https://github.com/JeffBrownTech/ansible-lab) again, I made a parameters.json file and saved it to my Azure Shell clouddrive so I can reuse it easily. I set variables so I don't have to enter my administrator name, and it pulls a secret for the password from my Azure Key Vault (values in "<>" are obfuscated):
 
-## Use Case
+```json
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vmAdminName": {
+            "value": "admin"
+        },
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+        "vmAdminPassword": {
+            "reference": {
+                "keyVault": {
+                "id": "/subscriptions/<subscription guid>/resourceGroups/api-keys-rg/providers/Microsoft.KeyVault/vaults/lab-resources"
+                },
+                "secretName": "<secret name>"
+            }
+        }
+    }
+}
+```
 
-## Cloud Research
+I then saved a one-liner PowerShell command to a script to deploy the lab using the template in my GitHub along with the local file in my Azure shell clouddrive:
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+```powershell
+New-AzResourceGroupDeployment -ResourceGroupName ansible-lab-rg -Mode Complete -TemplateUri "https://raw.githubusercontent.com/JeffBrownTech/ansible-lab/main/deploy-ansible-lab.json" -TemplateParameterFile .\parameters.json
+```
 
-## Try yourself
+Once the lab was deployed, I made a "project" folder and created an *ansible.cfg* file to set some defaults. In this case, I set my inventory file to be just "inventory". This means that I don't need to specify *-i inventory* when running ansible commands. Contents of the ansible.cfg file:
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+```
+[defaults]
+inventory = inventory
+```
 
-### Step 1 — Summary of Step
+I then create the inventory file itself making two of my Linux servers app servers and then the third as the database server. I can target specific groups of endpoints using *[group name]* and the list of server names or IP addresses.
 
-![Screenshot](https://via.placeholder.com/500x300)
+You can also make groups of groups with the :children suffix, so I have a "multi" group that includes both the app and db groups.
 
-### Step 1 — Summary of Step
+Finally, I created some variables that apply to the multi group (or effectively all servers in the inventory file). I specified the username to connect to the servers as well as the password. Yes, storing a plain text password is not recommended, but for testing/lab purposes, that's what I have for now.
 
-![Screenshot](https://via.placeholder.com/500x300)
+```
+[app]
+linux0
+linux1
 
-### Step 3 — Summary of Step
+[db]
+linux2
 
-![Screenshot](https://via.placeholder.com/500x300)
+[multi:children]
+app
+db
+
+# Variables applied to all servers
+[multi:vars]
+ansible_user=jeff_cloud
+ansible_ssh_pass=< password >
+```
+
+Having these variables along with the ansible.cfg file reduces the number of switches I need for the *ansible* command. Here are a couple of examples installing Django to my app servers & verifying the version, and then installing MariaDB to my database server & settings the service to autostart. Notice I no longer need to specify the inventory file, the username, or the password:
+
+![Ansible app installs](./img/ansibleinstallapps.png)
+
+I had to use the yum module to Django. The commands from the book to install Django using pip would not work for me and was unable to find an answer quickly. So I pivoted to using the yum module instead.
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+I worked a bit more to automate the ansible lab deployment and used inventory variables to make the ansible commands easier to execute.
 
 ## Next Steps
 
-✍️ Describe what you think you think you want to do next.
+Going to work through playbooks chapter next and then maybe start looking at using Ansible with Azure resources.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+[Twitter](link)
+[LinkedIn](link)
