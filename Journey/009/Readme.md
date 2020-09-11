@@ -14,7 +14,7 @@ Ansible is used to configure multiple servers that exact same way using individu
 
 # Instructions
 
-I decided to start with [Jeff Geerling's Ansible 101 YouTube playlist](https://www.youtube.com/playlist?list=PL2_OBreMn7FqZkvMYt6ATmgC0KAGGJNAN). I had it bookmared for awhile along with purchasing his book [Ansible for DevOps](https://leanpub.com/ansible-for-devops). I thought the one hour videos would be a good introduction, then I could dive into the book. What I didn't know was the 101 series is him going through the chapters of the book, so I've decided to watch 1-2 of the videos to watch the demos, then go back and read those chapters of the book. So this day of cloud is based on the first two chapters of the book and video series.
+I decided to start with [Jeff Geerling's Ansible 101 YouTube playlist](https://www.youtube.com/playlist?list=PL2_OBreMn7FqZkvMYt6ATmgC0KAGGJNAN). I had it bookmarked for awhile along with purchasing his book [Ansible for DevOps](https://leanpub.com/ansible-for-devops). I thought the one hour videos would be a good introduction, then I could dive into the book. What I didn't know was the 101 series is him going through the chapters of the book, so I've decided to watch 1-2 of the videos to watch the demos, then go back and read those chapters of the book. So this day of cloud is based on the first two chapters of the book and video series.
 
 Using my [ansible-lab](https://github.com/JeffBrownTech/ansible-lab) ARM template, I deployed the resources out into Azure. This lab contains the server 'ansiblecontrol' to use to host playbooks and push out configurations to my three Linux VMs (linux0, linux1, linux2).
 
