@@ -82,5 +82,5 @@ Going to work through playbooks chapter next and then maybe start looking at usi
 
 ## Social Proof
 
-[Twitter](link)
-[LinkedIn](link)
+[Twitter](https://twitter.com/JeffWBrown/status/1304227664887074816?s=20)
+[LinkedIn](https://www.linkedin.com/posts/jeffwaynebrown_jeffbrowntech100daysofcloud-activity-6709993550874079233-Yin1)
