@@ -40,5 +40,5 @@ Continue working through the exmaple playbooks from Chapter 4 just to get famili
 
 ## Social Proof
 
-[Twitter](link)
-[LinkedIn](link)
+[Twitter](https://twitter.com/JeffWBrown/status/1304610987580899328?s=20)
+[LinkedIn](lihttps://www.linkedin.com/posts/jeffwaynebrown_jeffbrowntech100daysofcloud-activity-6710376845721796608-wnCSnk)
