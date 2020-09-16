@@ -45,13 +45,13 @@ At the end of this challenge, I'd like to:
 - [ ] ☁️ 6 > [Use Azure Key Vault in ARM Templates](Journey/006/Readme.md)
 - [ ] ☁️ 7 > [Deploy from GitHub with a Deploy to Azure Button](Journey/007/Readme.md)
 - [ ] ☁️ 8 > [Creating Multiples of Azure Resources with the copy Element](Journey/008/Readme.md)
+- [ ] ☁️ 12 > [Adding Outputs to ARM Templates](Journey/012/Readme.md)
 
 ## Ansible
 
 - [ ] ☁️ 9 > [Getting Started with Ansible](Journey/009/Readme.md)
 - [ ] ☁️ 10 > [Running Ad-Hoc Commands in Ansible](Journey/010/Readme.md)
 - [ ] ☁️ 11 > [Configuring Deployments with Ansible Playbooks](Journey/011/Readme.md)
-- [ ] ☁️ 12 > [](Journey/012/Readme.md)
 - [ ] ☁️ 13 > [](Journey/013/Readme.md)
 - [ ] ☁️ 14 > [](Journey/014/Readme.md)
 - [ ] ☁️ 15 > [](Journey/015/Readme.md)
