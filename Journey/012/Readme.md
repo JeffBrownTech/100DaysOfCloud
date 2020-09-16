@@ -29,5 +29,5 @@ After the ARM template is completed, I can now just copy the connectionString ou
 
 ## Social Proof
 
-[Twitter](link)
-[LinkedIn](link)
+[Twitter](https://twitter.com/JeffWBrown/status/1306075763460857856?s=20)
+[LinkedIn](https://www.linkedin.com/posts/jeffwaynebrown_jeffbrowntech100daysofcloud-activity-6711841607169273857-_Vnm)
