@@ -74,5 +74,5 @@ I will continue to build out this playbook to create an Ansible lab, such as net
 
 ## Social Proof
 
-[Twitter](link)
-[LinkedIn](link)
+[Twitter](https://twitter.com/JeffWBrown/status/1307835012104871936?s=20)
+[LinkedIn](https://www.linkedin.com/posts/jeffwaynebrown_jeffbrowntech100daysofcloud-activity-6713600769221890048-Bhs2)
