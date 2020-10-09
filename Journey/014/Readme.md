@@ -1,52 +1,61 @@
 **Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+![banner](.\img/banner.png)
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
-
-## Prerequisite
-
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
-
-## Use Case
-
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+Continuing on replicating my Ansible lab I originally built using ARM templates.
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+Just like with ARM templates, I need to build the network interface for the VM first. Pretty straight forward with specifying the NIC name, resource group, virtual network, and subnet. Then configuring the IP configuration. For the NIC for the ansible server, I put a public IP address on it. One difference with Ansible is I don't have to create the public IP resource first, I can specify it directly in the NIC IP configuration. Finally, assigning a security group that is created priot in the playbook:
 
-### Step 1 — Summary of Step
+```yml
+- name: Create {{ ansiblecontrol_vm_name }} network interface
+    azure_rm_networkinterface:
+    name: "{{ ansiblecontrol_vm_name }}-nic"
+    resource_group: "{{ rg_name }}"
+    virtual_network: "{{ vnet_name }}"
+    subnet_name: "{{ subnet0_name }}"
+    state: present
+    ip_configurations:
+        - name: "ipconfig1"
+        private_ip_allocation_method: Dynamic
+        public_ip_address_name: "{{ ansiblecontrol_vm_name }}-publicip"
+        public_ip_allocation_method: Dynamic
+    security_group: "{{ ansiblecontrol_vm_name }}-nsg"
+```
 
-![Screenshot](https://via.placeholder.com/500x300)
+Onto creating the virtual machine. Also pretty straight forward in setting the admin username and password, the VM size, the previously created NIC interface, and the image to use.
 
-### Step 1 — Summary of Step
+```yml
+- name: Create ansible virtual machine
+    azure_rm_virtualmachine:
+    resource_group: "{{ rg_name }}"
+    name: "{{ ansiblecontrol_vm_name }}"
+    vm_size: "{{ vm_size }}"
+    admin_username: "{{ admin_username }}"
+    admin_password: "{{ admin_password }}"
+    network_interfaces: "{{ ansiblecontrol_vm_name }}-nic"
+    managed_disk_type: Standard_LRS
+    os_disk_name: "{{ ansiblecontrol_vm_name }}_os-disk"
+    image:
+        offer: CentOS
+        publisher: OpenLogic
+        sku: "{{ centos_sku }}"
+        version: latest
+```
 
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
+The full playbook with variable file can be found this repo: [azure-ansible-lab](https://github.com/JeffBrownTech/azure-ansible-lab)
 
 ## ☁️ Cloud Outcome
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+Ability to deploy Azure resources using Ansible.
 
 ## Next Steps
 
-✍️ Describe what you think you think you want to do next.
+Think I need to move onto a different topic like Azure Functions or Azure Automation.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+[Twitter](link)
+[LinkedIn](link)
