@@ -1,5 +1,5 @@
 **Add a cover photo like:**
-![banner](.\img/banner.png)
+![banner](./img/banner.png)
 
 ## Introduction
 
