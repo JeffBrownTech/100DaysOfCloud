@@ -1,4 +1,3 @@
-**Add a cover photo like:**
 ![banner](./img/banner.png)
 
 ## Introduction
@@ -57,5 +56,5 @@ Think I need to move onto a different topic like Azure Functions or Azure Automa
 
 ## Social Proof
 
-[Twitter](link)
-[LinkedIn](link)
+[Twitter](https://twitter.com/JeffWBrown/status/1314410857988726786?s=20)
+[LinkedIn](https://www.linkedin.com/posts/jeffwaynebrown_jeffbrowntech100daysofcloud-activity-6720176663495348224-iFmR)
