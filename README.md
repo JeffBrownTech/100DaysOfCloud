@@ -53,7 +53,7 @@ At the end of this challenge, I'd like to:
 - [ ] ☁️ 10 > [Running Ad-Hoc Commands in Ansible](Journey/010/Readme.md)
 - [ ] ☁️ 11 > [Configuring Deployments with Ansible Playbooks](Journey/011/Readme.md)
 - [ ] ☁️ 13 > [Deploying Azure Resources with Ansible](Journey/013/Readme.md)
-- [ ] ☁️ 14 > [](Journey/014/Readme.md)
+- [ ] ☁️ 14 > [Deploy Azure VMs using Ansible](Journey/014/Readme.md)
 - [ ] ☁️ 15 > [](Journey/015/Readme.md)
 - [ ] ☁️ 16 > [](Journey/016/Readme.md)
 - [ ] ☁️ 17 > [](Journey/017/Readme.md)
