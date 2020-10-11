@@ -60,5 +60,5 @@ Going to continue with Matt's course and get into developing functions locally u
 
 ## Social Proof
 
-[Twitter](link)
-[LinkedIn](link)
+[Twitter](https://twitter.com/JeffWBrown/status/1315334666614829056?s=20)
+[LinkedIn](https://www.linkedin.com/posts/jeffwaynebrown_jeffbrowntech100daysofcloud-activity-6721100715701354496--RxU)
