@@ -50,7 +50,7 @@ When pasting into a browser, it will display my $body string that shows the two 
 
 I can also call this function programmatically, so here's an example using Invoke-RestMethod in PowerShell:
 
-![Calling function in PowerShell](/img/functionpowershell.png)
+![Calling function in PowerShell](./img/functionpowershell.png)
 
 Apologies if hard to see in these screenshots but I'm blurring out the function app name and the key, but hopefully this helps.
 
