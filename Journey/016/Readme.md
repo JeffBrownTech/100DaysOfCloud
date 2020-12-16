@@ -1,52 +1,67 @@
 **Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+![placeholder image](./img/banner.png)
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Continuing with Matt Allford's ([@mattallford](https://twitter.com/mattallford)) CloudSkill's course [Azure Functions for DevOps Engineers](https://portal.cloudskills.io/azure-functions-powershell), I looked into function triggers, bindings, and 
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+- Azure Subscription
+- PowerShell knowledge
 
 ## Use Case
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- Take input from a trigger and use it in the function
+- Output data to other resources 
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+The next section of the course goes through how to take data from the trigger for the function and use it in the function. All functions have a trigger, whether it's an HTTP trigger, a timer, or an event that happens elsewhere in Azure.
 
-### Step 1 — Summary of Step
+In this example, we built a trigger based on an event grid event, such as deleting a resource group. Every action in Azure creates an event in event grid, so we can easily key of these actions for our function to trigger.
 
-![Screenshot](https://via.placeholder.com/500x300)
+For the function, the incoming data from the event grid is defined as a parameter named $eventGridEvent:
 
-### Step 1 — Summary of Step
+```powershell
+param($eventGridEvent, $TriggerMetadata)
+```
 
-![Screenshot](https://via.placeholder.com/500x300)
+Once we know the event occurred (in this case, deleting a resource group), you can manipulate the data from the event and do something with it, like so:
 
-### Step 3 — Summary of Step
+```powershell
+# Gather data from the function trigger paylod
+$EventSubject = $eventGridEvent.subject -split "/"
+$ResourceGroupName = $EventSubject[-1]
+$user = $eventGridEvent.data.claims.'http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn'
+$SubscriptionID = $eventGridEvent.data.subscriptionId
 
-![Screenshot](https://via.placeholder.com/500x300)
+# Collect data from the event ready to send to Azure Table Storage
+$TableData = [PSCustomObject]@{
+    partitionKey = $eventGridEvent.eventTime
+    rowkey = $eventGridEvent.id
+    ResourceGroupName = $ResourceGroupName
+    User = $user
+}
+```
 
-## ☁️ Cloud Outcome
+We can then output the data into another Azure resource. For this example, we created an output binding named **outputTable** to store the event data into an Azure Table Storage. What's great is within the PowerShell code you don't need to know a lot of specifics for how to put this data into the table. You can use the **Push-OutputBinding** cmdlet with the name of the binding to put the data into the table:
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+```powershell
+Push-OutputBinding -Name outputTable -Value $TableData
+```
+
+This will create the table if it doesn't exist and store the **$TableData** there.
+
+Here's what the full integration map looks like:
+
+![](./img/integrationmap.png)
 
 ## Next Steps
 
-✍️ Describe what you think you think you want to do next.
+Continuing to the next lesson that covers various settings within the function app including storing environmental variables, keys, managed identities, and networking.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+[Twitter](link)
+[LinkedIn](link)
