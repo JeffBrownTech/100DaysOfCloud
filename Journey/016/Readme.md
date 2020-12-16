@@ -62,5 +62,5 @@ Continuing to the next lesson that covers various settings within the function a
 
 ## Social Proof
 
-[Twitter](link)
-[LinkedIn](link)
+[Twitter](https://twitter.com/JeffWBrown/status/1339010005081591808?s=20)
+[LinkedIn](https://www.linkedin.com/posts/jeffwaynebrown_jeffbrowntech100daysofcloud-activity-6744775844713127936-xhjV)
