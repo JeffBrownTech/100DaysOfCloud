@@ -58,7 +58,7 @@ At the end of this challenge, I'd like to:
 ## Azure Functions
 
 - [ ] ☁️ 15 > [Getting Started with Azure Functions](Journey/015/Readme.md)
-- [ ] ☁️ 16 > [](Journey/016/Readme.md)
+- [ ] ☁️ 16 > [Triggers, Bindings, and Outputs](Journey/016/Readme.md)
 - [ ] ☁️ 17 > [](Journey/017/Readme.md)
 - [ ] ☁️ 18 > [](Journey/018/Readme.md)
 - [ ] ☁️ 19 > [](Journey/019/Readme.md)
