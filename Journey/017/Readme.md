@@ -46,6 +46,6 @@ The next module in the course is covering monitoring.
 
 ## Social Proof
 
-[Twitter](link)
+[Twitter](https://twitter.com/JeffWBrown/status/1340853470803316736?s=20)
 
-[LinkedIn](link)
+[LinkedIn](https://www.linkedin.com/posts/jeffwaynebrown_jeffbrowntech100daysofcloud-activity-6746619455578759169-18dI)
