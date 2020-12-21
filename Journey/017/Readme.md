@@ -1,52 +1,51 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+![](./img/banner.png)
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Continuing with Matt Allford's ([@mattallford](https://twitter.com/mattallford)) CloudSkill's course [Azure Functions for DevOps Engineers](https://portal.cloudskills.io/azure-functions-powershell), this next module covered a lot of topics like authentication, function keys, custom domains, managed identities, integrating key vault, and networking.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
-
-## Use Case
-
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- Azure Subscription
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+This next module in the course covered a lot of settings to use within Azure Functions. Here's a quick highlight of a few of them.
 
-### Step 1 — Summary of Step
+### Authentication
+You can authenticate users against different providers, such as Azure Active Directory, Microsoft, Facebook, Google, Twitter, etc. The Azure Function will manages any refresh tokens and the authenticated session.
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Function Keys
+Function keys make it harder to access the function app. HTTP access can be anonymous or require a API key in the request. There are two authorization levels for API keys:
 
-### Step 1 — Summary of Step
+1. Function - only applies to the function where the key is defined
+2. Host - access any function within the function app
 
-![Screenshot](https://via.placeholder.com/500x300)
+There is also a Master Key at the admin level for accessing the Function Runtime API. This key cannot be deleted or renewed.
 
-### Step 3 — Summary of Step
+When creating a new function inside the function, you'll have three options: Function, Anonymous, or Admin.
 
-![Screenshot](https://via.placeholder.com/500x300)
+### Application Settings
+In the Function App, you can configure settings to be used within the app. You can define variables to be used in the function code, such as a storage account endpoint or a Key Vault reference. The Key Vault could contain a user name or password secret for authenticating to a service. The ability to reference a Key Vault value protects any sensitive information that you might need to pass to the code in the function. The values stored here can be referenced inside the code as an environment variable. In PowerShell, this would look like *$env:<name of app setting>*.
 
-## ☁️ Cloud Outcome
+### Managed Identities
+Managed identities are not unique to Azure Functions, and they enable an identity to be associated with a resource. You can then use this identity to allow the Function App access to other Azure AD Resources. The two types are:
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+1. System-assigned: tied to the Function App and is deleted if the function app is deleted
+2. User-assigned: standalone identity resource that is not tied to the function app; can be assigned to multiple resources
+
+An example includes creating a managed identity for a Function App, then assigning that identity an access policy to retrieve items in an Azure Key Vault. With the identity, you can scope the Azure Function to only have the permissions it needs to perform the actions required, such as listing and retrieving secrets while not creating or deleting.
+
+### Networking
+
+Azure Functions are pretty flexible when it comes to networking. You can use Azure Front Door to have a primary and secondary regions for a function to execute. You can also create hybrid connections so the function can access resources outside of Azure. You can create a subnet in a vnet so the function can access resources inside the vnet, or even create a private endpoint for the function so resources can access the function without traversing the public Internet.
 
 ## Next Steps
 
-✍️ Describe what you think you think you want to do next.
+The next module in the course is covering monitoring.
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
+[Twitter](link)
 
-[link](link)
+[LinkedIn](link)
