@@ -1,52 +1,59 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+![placeholder image](.\img\banner.png)
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Following up in the function app course, we're taking a look at monitoring function apps.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+- Azure Subscription
+- Function App to execute
 
 ## Use Case
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+The ability to monitor and troubleshoot any resource or application is paramount to its successful usage.
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+Monitoring the performance of functions and troubleshoot them when they are not working is crucial. Microsoft provides several resources to monitor your Functions.
 
-### Step 1 — Summary of Step
+- Application Insights & Metrics
+    - Can be configured when creating the function app or later.
+    - Can view Function's Settings > Configuration for App Insights connection information
+    - Overview provides information like failed requests, response time, availability
 
-![Screenshot](https://via.placeholder.com/500x300)
+![](./img/appinsightscharts.png)
 
-### Step 1 — Summary of Step
+- Function Logs
+    - View the output of the function app running when it is executed
 
-![Screenshot](https://via.placeholder.com/500x300)
+![](./img/logstream.png)
 
-### Step 3 — Summary of Step
+- Monitor
+    - View the last 20 invocations of a specific function and their results
 
-![Screenshot](https://via.placeholder.com/500x300)
+![](./img/monitor.png)
 
-## ☁️ Cloud Outcome
+- Live Metrics
+    - Part of Application Insights
+    - Provides more granular and real-time metrics
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+![](./img/livemetrics.png)
+
+- Diagnostic Settings
+    - Configure Function logs or metrics to export this information to Log Analytics, storage account, or stream to event hub
+- Alerts
+    - Configure alerts based on certain triggers
+    - Create action group to send emails or integrate with another platform (e.g. ServiceNow)
+
 
 ## Next Steps
 
-✍️ Describe what you think you think you want to do next.
+Coming up next is the last module in the course. Will be covering development and integration with CI/CD pipelines in Azure DevOps.
 
 ## Social Proof
 
 ✍️ Show that you shared your process on Twitter or LinkedIn
 
-[link](link)
+[Twitter](link)
+[LinkedIn](link)
