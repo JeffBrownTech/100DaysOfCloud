@@ -53,7 +53,5 @@ Coming up next is the last module in the course. Will be covering development an
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[Twitter](link)
-[LinkedIn](link)
+[Twitter](https://twitter.com/JeffWBrown/status/1346600171216388096?s=20)
+[LinkedIn](https://www.linkedin.com/posts/jeffwaynebrown_jeffbrowntech100daysofcloud-activity-6752366067156434944-GPfF)
