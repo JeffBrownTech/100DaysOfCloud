@@ -1,4 +1,4 @@
-![placeholder image](.\img\banner.png)
+![placeholder image](./img/banner.png)
 
 ## Introduction
 
