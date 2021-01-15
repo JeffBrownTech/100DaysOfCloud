@@ -52,5 +52,5 @@ I have an Azure Functions project that I want to deploy using the knowledge from
 
 ## Social Proof
 
-[Twitter](link)
-[LinkedIn](link)
+[Twitter](https://twitter.com/JeffWBrown/status/1349876947954745344?s=20)
+[LinkedIn](https://www.linkedin.com/posts/jeffwaynebrown_jeffbrowntech100daysofcloud-activity-6755642722150825984-Le9U)
