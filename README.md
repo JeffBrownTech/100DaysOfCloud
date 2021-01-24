@@ -54,9 +54,9 @@ At the end of this challenge, I'd like to:
 - [ ] ☁️ 17 > [Function App Settings](Journey/017/Readme.md)
 - [ ] ☁️ 18 > [Monitoring Function Apps](Journey/018/Readme.md)
 - [ ] ☁️ 19 > [Function Development and Deployment](Journey/019/Readme.md)
-- [ ] ☁️ 20 > [](Journey/020/Readme.md)
+- [ ] ☁️ 20 > [Azure Function Project](Journey/020/Readme.md)
 
-## Crossing the bridge
+## Azure Automation
 
 - [ ] ☁️ 21 > [](Journey/021/Readme.md)
 - [ ] ☁️ 22 > [](Journey/022/Readme.md)
