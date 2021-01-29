@@ -58,7 +58,7 @@ At the end of this challenge, I'd like to:
 
 ## Azure Automation
 
-- [ ] ☁️ 21 > [](Journey/021/Readme.md)
+- [ ] ☁️ 21 > [Azure Automation: Creating a PowerShell Runbook](Journey/021/Readme.md)
 - [ ] ☁️ 22 > [](Journey/022/Readme.md)
 - [ ] ☁️ 23 > [](Journey/023/Readme.md)
 - [ ] ☁️ 24 > [](Journey/024/Readme.md)
