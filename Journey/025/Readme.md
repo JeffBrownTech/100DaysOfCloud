@@ -1,45 +1,27 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+![placeholder image](./img/banner.png)
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
-
-## Prerequisite
-
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+Diving back into some IaC concepts, I'm going to take a few days to look at Terraform. Terraform seems to be the popular tool for defining and deploying infrastructure. I'm going to learn some basics and then apply it to Azure.
 
 ## Use Case
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+Terraform is used to define infrastructure in an easy-to-read syntax for deployment and update purposes.
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+I'm getting started by watching [CloudSkills.io](https://cloudskills.io) course called [Terraform on Azure: The Big Picture](https://cloudskills.io/courses/terraform-azure). This was a live, two-day course back in 2020 led by Mike Pfeiffer, Luke Orellana, and Michael Levan. It has 12 modules in it, I'll document a few at a time in this posts.
 
-### Step 1 — Summary of Step
+There are several options for writing and executing Terraform code. To get started, I'm just using the Azure Cloud Shell, which has Terraform built-in and is already authenticated to Azure. You can also download the Terraform executable and place it in a folder that's in your PATH environment. This allows running Terraform commands in any directory from the console.
 
-![Screenshot](https://via.placeholder.com/500x300)
+To verify if Terraform is available, run the version command to output the current version:
 
-### Step 1 — Summary of Step
+```
+terraform version
+```
 
-![Screenshot](https://via.placeholder.com/500x300)
+![](./img/version.png)
 
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
 
 ## Next Steps
 
