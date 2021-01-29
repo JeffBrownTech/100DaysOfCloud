@@ -62,15 +62,15 @@ At the end of this challenge, I'd like to:
 - [ ] ☁️ 22 > [](Journey/022/Readme.md)
 - [ ] ☁️ 23 > [](Journey/023/Readme.md)
 - [ ] ☁️ 24 > [](Journey/024/Readme.md)
+
+## Terraform
+
 - [ ] ☁️ 25 > [](Journey/025/Readme.md)
 - [ ] ☁️ 26 > [](Journey/026/Readme.md)
 - [ ] ☁️ 27 > [](Journey/027/Readme.md)
 - [ ] ☁️ 28 > [](Journey/028/Readme.md)
 - [ ] ☁️ 29 > [](Journey/029/Readme.md)
 - [ ] ☁️ 30 > [](Journey/030/Readme.md)
-
-## Into the bushy, thorny forest
-
 - [ ] ☁️ 31 > [](Journey/031/Readme.md)
 - [ ] ☁️ 32 > [](Journey/032/Readme.md)
 - [ ] ☁️ 33 > [](Journey/033/Readme.md)
@@ -81,9 +81,6 @@ At the end of this challenge, I'd like to:
 - [ ] ☁️ 38 > [](Journey/038/Readme.md)
 - [ ] ☁️ 39 > [](Journey/039/Readme.md)
 - [ ] ☁️ 40 > [](Journey/040/Readme.md)
-
-## Trekking the dunes
-
 - [ ] ☁️ 41 > [](Journey/041/Readme.md)
 - [ ] ☁️ 42 > [](Journey/042/Readme.md)
 - [ ] ☁️ 43 > [](Journey/043/Readme.md)
@@ -94,9 +91,6 @@ At the end of this challenge, I'd like to:
 - [ ] ☁️ 48 > [](Journey/048/Readme.md)
 - [ ] ☁️ 49 > [](Journey/049/Readme.md)
 - [ ] ☁️ 50 > [](Journey/050/Readme.md)
-
-## Winding through the canyons
-
 - [ ] ☁️ 51 > [](Journey/051/Readme.md)
 - [ ] ☁️ 52 > [](Journey/052/Readme.md)
 - [ ] ☁️ 53 > [](Journey/053/Readme.md)
@@ -107,9 +101,6 @@ At the end of this challenge, I'd like to:
 - [ ] ☁️ 58 > [](Journey/058/Readme.md)
 - [ ] ☁️ 59 > [](Journey/059/Readme.md)
 - [ ] ☁️ 60 > [](Journey/060/Readme.md)
-
-## Stumbling through the caves
-
 - [ ] ☁️ 61 > [](Journey/061/Readme.md)
 - [ ] ☁️ 62 > [](Journey/062/Readme.md)
 - [ ] ☁️ 63 > [](Journey/063/Readme.md)
@@ -120,9 +111,6 @@ At the end of this challenge, I'd like to:
 - [ ] ☁️ 68 > [](Journey/068/Readme.md)
 - [ ] ☁️ 69 > [](Journey/069/Readme.md)
 - [ ] ☁️ 70 > [](Journey/070/Readme.md)
-
-## Resting at the Lagoon
-
 - [ ] ☁️ 71 > [](Journey/071/Readme.md)
 - [ ] ☁️ 72 > [](Journey/072/Readme.md)
 - [ ] ☁️ 73 > [](Journey/073/Readme.md)
@@ -133,9 +121,6 @@ At the end of this challenge, I'd like to:
 - [ ] ☁️ 78 > [](Journey/078/Readme.md)
 - [ ] ☁️ 79 > [](Journey/079/Readme.md)
 - [ ] ☁️ 80 > [](Journey/080/Readme.md)
-
-## Up into the mountains
-
 - [ ] ☁️ 81 > [](Journey/081/Readme.md)
 - [ ] ☁️ 82 > [](Journey/082/Readme.md)
 - [ ] ☁️ 83 > [](Journey/083/Readme.md)
@@ -146,9 +131,6 @@ At the end of this challenge, I'd like to:
 - [ ] ☁️ 88 > [](Journey/088/Readme.md)
 - [ ] ☁️ 89 > [](Journey/089/Readme.md)
 - [ ] ☁️ 90 > [](Journey/090/Readme.md)
-
-## Into the sky to touch the cloud!
-
 - [ ] ☁️ 91 > [](Journey/091/Readme.md)
 - [ ] ☁️ 92 > [](Journey/092/Readme.md)
 - [ ] ☁️ 93 > [](Journey/093/Readme.md)
