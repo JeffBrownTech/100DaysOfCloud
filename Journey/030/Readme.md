@@ -1,52 +1,31 @@
 **Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Week 1
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+I'm starting the [CloudSkills.io Cloud Native DevOps Bootcamp](https://cloudskills.io/courses/cloud-native). I've been a CloudSkills.io member for quite a while and have enjoyed the expertise Mike Pfeiffer and other instructions have produced. I'm looking forward to getting started with this bootcamp. It is going to cover learning AWS and Azure by completing 46 projects.
 
 ## Prerequisite
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+- CloudSkills.io subscription
+- Azure and AWS accounts
 
-## Use Case
+## What I Learned this Week
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+The bootcamp has a live lecture each week. The first week, Michael Levan covered the basics of devops, and Mike Pfeiffer talked more about what it takes to be successful.
 
-## Cloud Research
+There were 5 projects to complete this week:
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+- Create a GitHub account
+- Create an Azure account
+- Create an AWS account
+- GitHub projects
+- GitHub Actions
 
-## Try yourself
+I already had accounts in those 3 different services, so that was quick work. I didn't know GitHub had project tracking, so that was a nice-to-see feature. Finally, while I have heard of GitHub Actions, I never worked with them before. Michael L. walked through creating the default "Hello, World" project. GitHub Actions are written in YAML.
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
+I can see why people think this might end up being a replacement for Azure DevOps. With Projects in there two, this has a lot of the same functionality.
 
 ## Next Steps
 
-✍️ Describe what you think you think you want to do next.
-
-## Social Proof
-
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+Week 2 will cover Scripting Like a Developer.
