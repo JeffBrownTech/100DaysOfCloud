@@ -54,6 +54,8 @@ The last section talks about interpolation, which is where you pass information 
 
 Finally, Terraform is smart enough to know which order resources need to be deployed in. This is very different than ARM templates where you use "dependsOn". Since I reference the resource group in the virtual network creation, Terraform knows to create the resource group first before the virtual network.
 
+Check out my answer to the [end-of-module challenge](https://github.com/JeffBrownTech/terraform_learning/tree/main/cloudskills_terraform-on-azure/02-Configurations).
+
 ## Next Steps
 
 Will work on next module over Terraform state.
