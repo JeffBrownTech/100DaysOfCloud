@@ -66,7 +66,7 @@ At the end of this challenge, I'd like to:
 ## Terraform
 
 - [ ] ☁️ 25 > [Configurations](Journey/025/Readme.md)
-- [ ] ☁️ 26 > [Terraform State](Journey/026/Readme.md)
+- [ ] ☁️ 26 > [State](Journey/026/Readme.md)
 - [ ] ☁️ 27 > [Variables](Journey/027/Readme.md)
 - [ ] ☁️ 28 > [Modules](Journey/028/Readme.md)
 - [ ] ☁️ 29 > [Advanced HCL](Journey/029/Readme.md)
