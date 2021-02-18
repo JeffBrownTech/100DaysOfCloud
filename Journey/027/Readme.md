@@ -1,52 +1,54 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Variables
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Going through the next module in the course covering variables. Variables make a Terraform plan more resusable by allowing you to specify resource properties instead of hard-coding them into the plan.
 
-## Prerequisite
+## More About Variables
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+Variables in Terraform are implemented in a couple of ways. First, you write a file named variables.tf that defines the different variables and their properties. For example, create a location variable that determines resources are deployed. Define the variable type (string), description, and an optional default value.
 
-## Use Case
+```
+variable "location" {
+    type = string
+    description = "Azure region to deploy resources to"
+    default = "westus"
+}
+```
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+Other variable types include lists, mappings, numbers, objects, and bool (true/false).
 
-## Cloud Research
+Next, there is a terraform.tfvars file. This file contains the values of the variables for your deployment. Terraform is hard-coded to look for the .tfvars file. For example, the location variable from above:
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+```
+location = "eastus"
+```
 
-## Try yourself
+In the main.tf file, you reference the variables using "var" and the name of the variable. For example, deploying a resource group. In the name property, I use interpolation to reference the variable inside the string. The location property is a bit simpler.
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+```
+resource "azurerm_resource_group" "rg" {
+    name = "rg-webapp-prod-${var.location}-001"
+    location = var.location
+}
+```
 
-### Step 1 — Summary of Step
+You can also define variables in the command line when you execute the terraform plan. You can use multiple -var="" parameters as needed.
 
-![Screenshot](https://via.placeholder.com/500x300)
+```
+terraform apply -var="location=eastus"
+```
 
-### Step 1 — Summary of Step
+You can define environmental variables too:
 
-![Screenshot](https://via.placeholder.com/500x300)
+```
+export TF_VAR_application=terraformdemo
+```
 
-### Step 3 — Summary of Step
+The end of the module had another challenge to continue improving the virtual machine deployment using variables. Here is my answer to the challenge:
 
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
+[JeffBrownTech GitHub | terraform_learning/cloudskills_terraform-on-azure/04-Variables](https://github.com/JeffBrownTech/terraform_learning/tree/main/cloudskills_terraform-on-azure/04-Variables)
 
 ## Next Steps
 
-✍️ Describe what you think you think you want to do next.
-
-## Social Proof
-
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+Move onto the next lesson covering Modules.
